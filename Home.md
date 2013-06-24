@@ -1,6 +1,6 @@
 # Web Development
 
-* [Twitter Bootstrap](twitter_bootstrap)
-* [Play Framework](play_framework)
-* [Moconti](moconti)
-* [Apache](apache)
+* [Twitter Bootstrap](Twitter_Bootstrap)
+* [Play Framework](Play_Framework)
+* [Moconti](Moconti)
+* [Apache](Apache)
