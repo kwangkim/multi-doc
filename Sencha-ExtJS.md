@@ -1,6 +1,10 @@
 # Sencha ExtJS
 
 # About
+## Ext vs. ExtJS
+* Ext Core: Javascript framework (e.g. jQuery, prototype)
+* ExtJS: UI, Theme based on Ext Core
+* jQuery (Javascript utilities) vs. ExtJS (UI Javascript framework, heavier than jQuery)
 
 # Development
 ## Eclipse JavaScript Plugins
