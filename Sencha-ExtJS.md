@@ -58,13 +58,25 @@ Copyright (C) 2013 Dawid Paku\u0142a - w3des.net
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 * Clear Toolkit for ExtJS - Open Source Freeware from Farata Systems
+ * Clear Toolkit is not an architectural framework. It is a set of components, code generators, and plugins that extend Apache Flex framework and tools built on top of these components that substantially increase productivity of the enterprise JavaScript and Flex developers.
  * Clear Data Builder (CDB): a code generator that can create a CRUD application immediately, will have HTML/JavaScript/ExtJS client and Java-based server
- * Download from [here](http://cleartoolkit.com/downloads/plugins/extjs/cleardatabuilder/4.1.4/site.zip)
- * Installation: Eclipse-->Help-->Install New Software-->Add-->Archive-->site.zip-->[v]ClearDataBuilder for Ext JS, v1.0-->Restart Eclipse
- * Install Verification: Help-->About Eclipse-->Installation Details-->ClearDataBuilder for Ext JS Feature
-* Evaluation Version from Sencha (not suitable for product)
-
-# Hello ExtJS @CDB Project for Eclipse
-* Eclipse-->File-->New-->Other-->ClearDataBuilder for Ext JS Project-->New Clear Data Builder Project
- * Project name: helloCDB
- * Type: Apache Tomcat v7.0, Persistence Platform: None
+ * Install Prerequisites-1
+```
+Missing requirement: ClearDataBuilder for Ext JS 1.0.0.201301242238 (com.farata.cleardatabuilder.extjs 1.0.0.201301242238) requires 'bundle org.eclipse.jpt.common.core 0.0.0' but it could not be found
+# Eclipse-->Install-->Web,XML,Java EE and OSGi Enterprise Development
+ [v] Dali Java Persistence Tools - check all 6 related items
+```
+ * Install Prerequisites-2
+```
+Missing requirement: ClearDataBuilder for Ext JS 1.0.0.201301242238 (com.farata.cleardatabuilder.extjs 1.0.0.201301242238) requires 'bundle org.eclipse.jst.servlet.ui 0.0.0' but it could not be found
+# Install Eclipse Java EE
+```
+ * Download & Install CDB v4.1.4
+```
+# wget http://cleartoolkit.com/downloads/plugins/extjs/cleardatabuilder/4.1.4/site.zip
+# mv site.zip ClearDataBuilder.zip
+# Eclipse-->Help-->Install New Software-->Add-->Archive-->ClearDataBuilder.zip
+-->OK-->[v]ClearDataBuilder for Ext JS, v1.0-->Next-->
+# restart Eclipse...
+```
+* Evaluation Version from Sencha (just for reference)
