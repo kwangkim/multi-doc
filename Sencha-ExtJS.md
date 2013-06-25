@@ -59,9 +59,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ```
 * Clear Toolkit for ExtJS - Open Source Freeware from Farata Systems
  * Clear Data Builder (CDB): a code generator that can create a CRUD application immediately, will have HTML/JavaScript/ExtJS client and Java-based server
-* Evaluation Version from Sencha
+ * Download from [here](http://cleartoolkit.com/downloads/plugins/extjs/cleardatabuilder/4.1.4/site.zip)
+ * Installation: Eclipse-->Help-->Install New Software-->Add-->Archive-->site.zip-->[v]ClearDataBuilder for Ext JS, v1.0-->Restart Eclipse
+ * Install Verification: Help-->About Eclipse-->Installation Details-->ClearDataBuilder for Ext JS Feature
+* Evaluation Version from Sencha (not suitable for product)
 
-# Hello ExtJS Project for Eclipse
-* Eclipse --> File --> New --> Other --> JavaScript Project --> helloExtJS --> Create a separate root folder
-* helloExtJS --> script --> New --> JavaScript Source File --> test.js --> Generate comments --> Finish
-* Run As --> Java2Script Application
+# Hello ExtJS @CDB Project for Eclipse
+* Eclipse-->File-->New-->Other-->ClearDataBuilder for Ext JS Project-->New Clear Data Builder Project
+ * Project name: helloCDB
+ * Type: Apache Tomcat v7.0, Persistence Platform: None
