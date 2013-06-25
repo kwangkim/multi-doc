@@ -85,3 +85,11 @@ Missing requirement: ClearDataBuilder for Ext JS 1.0.0.201301242238 (com.farata.
 * Eclipse-->File-->New-->Other-->ClearDataBuilder for Ext JS Project-->New Clear Data Builder Project
  * Project name: helloCDB
  * Type: Apache Tomcat v7.0, Persistence Platform: None
+
+# ExtJS Tutorial
+* MapFish's ExtJS Tutorial: [here](http://mapfish.org/doc/tutorials/extjs.html)
+* Sencha ExtJS: [here](https://www.sencha.com/store/extjs/), [about](http://www.sencha.com/products/extjs/)
+ * Examples of Ext JS 4.2.1: [here](http://docs.sencha.com/extjs/4.2.1/#!/example)
+ * License: Ext JS 4 + Standard Support (1 Developer Pack): $595.00
+ * Ext JS 4.2 documents: [here](http://docs.sencha.com/extjs/4.2.1/)
+ * Getting Started with Ext JS 4.2.1: [here](http://docs.sencha.com/extjs/4.2.1/#!/guide/getting_started-section-1-requirements)
