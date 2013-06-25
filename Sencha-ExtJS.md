@@ -80,3 +80,8 @@ Missing requirement: ClearDataBuilder for Ext JS 1.0.0.201301242238 (com.farata.
 # restart Eclipse...
 ```
 * Evaluation Version from Sencha (just for reference)
+
+# Hello ExtJS @CDB Project for Eclipse
+* Eclipse-->File-->New-->Other-->ClearDataBuilder for Ext JS Project-->New Clear Data Builder Project
+ * Project name: helloCDB
+ * Type: Apache Tomcat v7.0, Persistence Platform: None
