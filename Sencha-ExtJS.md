@@ -6,6 +6,9 @@
 * ExtJS: UI, Theme based on Ext Core
 * jQuery (Javascript utilities) vs. ExtJS (UI Javascript framework, heavier than jQuery)
 
+## Download ExtJS
+* [4.2.1-GPL here](http://cdn.sencha.com/ext/gpl/ext-4.2.1-gpl.zip)
+
 # Development
 ## Eclipse JavaScript Plugins
 * Eclipse Web Development Tools
