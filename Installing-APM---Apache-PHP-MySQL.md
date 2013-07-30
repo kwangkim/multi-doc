@@ -82,6 +82,8 @@ php-odbc-5.3.3-23.el6_4.x86_64
 /usr/lib64/httpd/modules/libphp5.so <-- !
 /var/lib/php/session
 /var/www/icons/php.gif
+# vi /erc/php.ini; # // form tag를 이용해서 MySQL에 데이터를 입력하면 값이 공백으로 들어가지 않도록 함
+register_globals = On
 # vi /etc/httpd/conf/httpd.conf
 ...
 #LoadModule unique_id_module modules/mod_unique_id.so
