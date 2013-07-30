@@ -1,4 +1,5 @@
 # MySQL_Basics
+* [ref](https://www.digitalocean.com/community/articles/a-basic-mysql-tutorial)
 
 # Create and Delete a MySQL Database
 ```sh
