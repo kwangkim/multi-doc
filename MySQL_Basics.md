@@ -121,3 +121,11 @@ mysql> SOURCE ./employees_table.sql
 # mysql kimduhodb < employees_table.sql;
 # mysql < employees_table.sql;  # // if USE kimduhodb; statement is placed at the first statement in the file
 ```
+
+# MySQL with PHP
+```php
+<?php
+// your codes here
+mysql_query('DROP TABLE IF EXISTS `kimduhodb`.`employees`') or die(mysql_error());
+?>
+```
