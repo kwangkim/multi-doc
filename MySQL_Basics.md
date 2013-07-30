@@ -1,6 +1,45 @@
 # MySQL_Basics
 * [ref](https://www.digitalocean.com/community/articles/a-basic-mysql-tutorial)
 
+# Connect to a MySQL Database
+```sh
+# mysql -u kimduho -p kimduhodb;
+Enter password: ****************
+# mysql -u kimduho -pmysecretpassword kimduhodb;
+```
+
+# Add a MySQL User
+```sh
+mysql> USE kimduhodb;
+mysql> grant CREATE,INSERT,DELETE,UPDATE,SELECT on kimduhodb.* to kimduho@localhost;
+mysql> grant ALL on kimduhodb.* to kimduho@localhost;
+mysql> set password for kimduho = password('mysecretpassword');
+mysql> set password for kimduho@localhost = password('mysecretpassword');
+mysql> grant ALL on database.* to kimduho@'%' identified by 'mysecretpassword';
+mysql> exit;
+```
+
+# Add new user into users Table
+```sh
+```
+
+```sh
+# mysql -u root -p
+mysql> USE kimduhodb;
+mysql> CREATE TABLE potluck (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+name VARCHAR(20),
+food VARCHAR(30),
+confirmed CHAR(1), 
+signup_date DATE);
+mysql> SHOW TABLES;
+INSERT INTO `potluck` (`id`,`name`,`food`,`confirmed`,`signup_date`) VALUES (NULL, "Tina", "Salad","Y", '2012-04-10'); 
+mysql> SELECT * FROM potluck;
+
+
+mysql> grant CREATE,INSERT,DELETE,UPDATE,SELECT on kimduhodb.* to kimduho@localhost;
+mysql> SELECT 
+```
+
 # Create and Delete a MySQL Database
 ```sh
 # mysql -u root -p
