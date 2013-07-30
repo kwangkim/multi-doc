@@ -4,6 +4,7 @@
 # Create and Delete a MySQL Database
 ```sh
 # mysql -u root -p
+mysql> DROP DATABASE IF EXISTS kimduhodb;
 mysql> CREATE DATABASE kimduhodb;
 mysql> SHOW DATABASES;
 +--------------------+
@@ -100,4 +101,23 @@ mysql> SELECT * FROM potluck;
 |  4 | Tina | Salad     | Y         | 2012-04-10  |
 +----+------+-----------+-----------+-------------+
 3 rows in set (0.00 sec)
+```
+
+# Execute an SQL Script in MySQL
+```sh
+# vi employees_table.sql
+USE kimduhodb;
+DROP TABLE IF EXISTS employees;
+CREATE TABLE employees (id INT, first_name VARCHAR(20), last_name VARCHAR(30));
+INSERT INTO employees (id, first_name, last_name) VALUES (1, 'John', 'Doe');
+INSERT INTO employees (id, first_name, last_name) VALUES (2, 'Bob', 'Smith');
+INSERT INTO employees (id, first_name, last_name) VALUES (3, 'Jane', 'Doe');
+SELECT * FROM employees;
+# mysql -u root -p
+mysql> SOURCE ./employees_table.sql
+```
+* or run using MySQL command line tool
+```sh
+# mysql kimduhodb < employees_table.sql;
+# mysql < employees_table.sql;  # // if USE kimduhodb; statement is placed at the first statement in the file
 ```
