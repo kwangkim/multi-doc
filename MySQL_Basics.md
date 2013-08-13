@@ -168,3 +168,8 @@ mysql> SOURCE ./employees_table.sql
 mysql_query('DROP TABLE IF EXISTS `kimduhodb`.`employees`') or die(mysql_error());
 ?>
 ```
+
+# MySQL Dump
+```sh
+# mysqldump -u myid -mydata > mydata_201308.sql
+```
