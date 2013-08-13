@@ -24,6 +24,12 @@ cp: overwrite `/etc/my.cnf'? y
 ```
 
 ### Secure Installation (vs. Basic Installation)
+#### prerequisites
+* DO NOT forget to run mysqld using mysql_safe before following the below step
+```sh
+mysqld_safe &
+```
+
 ```sh
 # /usr/bin/mysql_secure_installation
 Enter current password for root (enter for none): 
