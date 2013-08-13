@@ -169,7 +169,11 @@ mysql_query('DROP TABLE IF EXISTS `kimduhodb`.`employees`') or die(mysql_error()
 ?>
 ```
 
-# MySQL Dump
+# MySQL Dump & Restore
 ```sh
-# mysqldump -u myid -mydata > mydata_201308.sql
+# mysqldump -u <user_id> -p <database_name> [table_name] > mysql_data_201308.sql
+# mysqldump -u <user_id> -p --all-databases [--add-locks] [--default-character-set euc-kr] > mysql_data_201308.sql
+# mysqldump -u <user_id> -p -d <database_name> > mysql_data_schema_201308.sql; // schema only backup
+# mysql -u <user_id> -p <database_name> < mysql_data_201308.sql
+# mysql -u <user_id> -p < mysql_data_201308.sql; // restore all databases
 ```
