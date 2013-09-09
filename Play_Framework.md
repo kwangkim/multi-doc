@@ -186,7 +186,7 @@ Have fun!
 ```sh
 # cd ~/test-app/; play run
 [info] Loading project definition from /root/test-app/project
-[info] Set current project to muse-link (in build file:/root/test-app/)
+[info] Set current project to test-app (in build file:/root/test-app/)
 
 [info] Updating {file:/root/test-app/}test-app...
 [info] Resolving org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Fin                                                                                [info] Done updating.                                                        
