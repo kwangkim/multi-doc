@@ -182,7 +182,8 @@ OK, application test-app is created.
 
 Have fun!
 ```
-* Run the newly created Play Server Application
+* Run the newly created Play Server Application (development mode)
+  * Ctrl+D will quit the Play Application
 ```sh
 # cd ~/test-app/; play run
 [info] Loading project definition from /root/test-app/project
@@ -205,5 +206,67 @@ Have fun!
 ```
 * Run the application on the Web
   * Localhost can be substituted by the real web url (e.g. 192.168.0.69): [http://localhost:9000/](http://localhost:9000/)
+* Play Production mode Start
+  * Ctrl+D will stop the console, but the process will run in background mode continuously
+  * RUNNING_PID is the running pid of the Play Application
+  * See logs/application.log for running Play log
+  * Ctrl+C will kill both JVMs: the Play console and the forked Play server
+```sh
+# cd ~/test-app/; play start;
+Ctrl+D
+```
+* Staging the Play Application:
+  * If you don’t have Play installed on the server, use the Scala build tool sbt: "sbt clean compile stage;"
+```sh
+# cd ~/test-app/; play clean compile stage
+# target/start;
+```
+* Creating a standalone version of the Play Application
+  * Build a binary version of the application and deploy it to the server without any dependencies on Play itself:
+```sh
+# cd ~/test-app/; play dist
+[info] Loading project definition from /root/test-app/project
+[info] Set current project to test-app (in build file:/root/test-app/)
+[info] Wrote /root/test-app/target/scala-2.10/test-app_2.10-1.0-SNAPSHOT.pom
+
+Your application is ready in /root/test-app/dist/test-app-1.0-SNAPSHOT.zip
+
+[success] Total time: 2 s, completed Sep 9, 2013 5:42:56 PM
+```
+  * Or include application configuration file like this:
+```sh
+# play -Dconfig.file=/root/test-app/conf/application.conf dist
+[info] Loading project definition from /root/test-app/project
+[info] Set current project to test-app (in build file:/root/test-app/)
+[info] Wrote /root/test-app/target/scala-2.10/test-app_2.10-1.0-SNAPSHOT.pom
+
+Your application is ready in /root/test-app/dist/test-app-1.0-SNAPSHOT.zip
+
+[success] Total time: 2 s, completed Sep 9, 2013 5:49:05 PM
+```
+  * Run the packed application:
+```sh
+# cp ~/test-app/dist/test-app-1.0-SNAPSHOT.zip ~/dest/to/;
+# cd ~/dest/to/; unzip ./test-app-1.0-SNAPSHOT.zip; cd test-app-1.0-SNAPSHOT/;
+# chmod a+x start/; ./start
+# Ctrl+C
+```
+  * Or you can make the program running in the background:
+```sh
+# Ctrl+Z
+# bg; exit;
+# ssh <dest-server>;
+# cd ~/dest/to/test-app-1.0-SNAPSHOT/; cat RUNNING_PID;
+6069
+# kill -9 6069; rm -rf RUNNING_PID;
+```
+  * ZIP file's structure will be like this:
+```sh
+test-app-1.0-SNAPSHOT
+ └ lib
+    └ *.jar
+ └ start
+```
+  * Publishing to a Maven (or Ivy) repository: [link](http://www.playframework.com/documentation/2.0/ProductionDist)
 * Consult the Play documentation:
-  * [http://localhost:9000/@documentation](http://localhost:9000/@documentation)
+  * Valid for development mode - [http://localhost:9000/@documentation](http://localhost:9000/@documentation)
