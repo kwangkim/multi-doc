@@ -6,7 +6,7 @@ tbd
 ```
 
 ## Architecture
-### Play v2.0
+### Play v2.1
 * Web Server
  * Internal Web Server: JBoss netty web server
  * External Apache Web Server: can be distributed as a package of war files
@@ -105,4 +105,60 @@ $HTTP["host"] =~ "www.loadbalancedapp.com" {
         ( "host" => "127.0.0.1", "port" => 9002 ) ) 
     )
 }
+```
+
+# Install Play
+## Prerequisites
+* JDK v6 or later
+  * JDK v1.7.0 preferred
+```sh
+# echo $JAVA_HOME
+/usr/java/jdk1.7.0_25
+# java -version
+java version "1.7.0_25"
+Java(TM) SE Runtime Environment (build 1.7.0_25-b15)
+Java HotSpot(TM) 64-Bit Server VM (build 23.25-b01, mixed mode)
+# javac -version
+javac 1.7.0_25
+```
+
+## Download and Install
+* Download
+```sh
+# wget http://downloads.typesafe.com/play/2.1.3/play-2.1.3.zip
+# unzip ./play-2.1.3.zip; mv play-2.1.3 /usr/;
+```
+* Build
+```sh
+# cd /usr/play-2.1.3/; cd framework/; ./build;
+> publish-local
+```
+* Add Path
+```sh
+vi /etc/bashrc
+...
+export PATH=$PATH:/usr/play-2.1.3
+```
+* Check play
+```sh
+# which play
+/usr/play-2.1.3/play
+# play help
+```
+* Add Iptables rule
+```sh
+# vi /etc/sysconfig/iptables
+...
+*filter
+...
+-A INPUT -m state --state NEW -m tcp -p tcp --dport 9000 -j ACCEPT
+...
+# service iptables restart
+```
+
+## Example Application
+```sh
+# cd /usr/play-2.1.3/samples/java/helloworld;
+# play run
+http://localhost:9000/
 ```
