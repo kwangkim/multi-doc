@@ -156,9 +156,54 @@ export PATH=$PATH:/usr/play-2.1.3
 # service iptables restart
 ```
 
-## Example Application
+## Sample Hello World Application
 ```sh
 # cd /usr/play-2.1.3/samples/java/helloworld;
 # play run
 http://localhost:9000/
 ```
+
+# Develop Play Application
+* Create new Play Application
+```sh
+# cd ~/; play new test-app
+The new application will be created in /root/test-app
+
+What is the application name? [test-app]
+> test-app
+
+Which template do you want to use for this new application? 
+
+  1             - Create a simple Scala application
+  2             - Create a simple Java application
+
+> 2
+OK, application test-app is created.
+
+Have fun!
+```
+* Run the newly created Play Server Application
+```sh
+# cd ~/test-app/; play run
+[info] Loading project definition from /root/test-app/project
+[info] Set current project to muse-link (in build file:/root/test-app/)
+
+[info] Updating {file:/root/test-app/}test-app...
+[info] Resolving org.hibernate.javax.persistence#hibernate-jpa-2.0-api;1.0.1.Fin                                                                                [info] Done updating.                                                        
+--- (Running the application from SBT, auto-reloading is enabled) ---
+
+[info] play - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+(Server started, use Ctrl+D to stop and go back to the console...)
+
+[info] Compiling 4 Scala sources and 2 Java sources to /root/test-app/target/scala-2.10/classes...
+[info] play - Application started (Dev)
+
+--- (RELOAD) ---
+
+[info] play - Application started (Dev)
+```
+* Run the application on the Web
+  * Localhost can be substituted by the real web url (e.g. 192.168.0.69): [http://localhost:9000/](http://localhost:9000/)
+* Consult the Play documentation:
+  * [http://localhost:9000/@documentation](http://localhost:9000/@documentation)
