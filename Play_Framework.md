@@ -271,5 +271,12 @@ test-app-1.0-SNAPSHOT
 * Consult the Play documentation:
   * Valid for development mode - [http://localhost:9000/@documentation](http://localhost:9000/@documentation)
 
+# Play Framework Java JSON Handling
+* [http://www.playframework.com/documentation/2.1.3/JavaJsonRequests]
+
+# Play Framework Java Documentation
+* [http://www.playframework.com/documentation/2.1.3/JavaHome]
+
 # Play Framework Example Project
-* [http://iam1492.tistory.com/23]
+* Java TODO List Project (by Play): [http://www.playframework.com/documentation/2.1.3/JavaTodoList]
+* Blog Project: [http://iam1492.tistory.com/23]
