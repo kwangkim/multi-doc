@@ -270,3 +270,6 @@ test-app-1.0-SNAPSHOT
   * Publishing to a Maven (or Ivy) repository: [link](http://www.playframework.com/documentation/2.0/ProductionDist)
 * Consult the Play documentation:
   * Valid for development mode - [http://localhost:9000/@documentation](http://localhost:9000/@documentation)
+
+# Play Framework Example Project
+* [http://iam1492.tistory.com/23]
