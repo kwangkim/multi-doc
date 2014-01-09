@@ -100,3 +100,25 @@ Missing requirement: ClearDataBuilder for Ext JS 1.0.0.201301242238 (com.farata.
  * License: Ext JS 4 + Standard Support (1 Developer Pack): $595.00
  * Ext JS 4.2 documents: [here](http://docs.sencha.com/extjs/4.2.1/)
  * Getting Started with Ext JS 4.2.1: [here](http://docs.sencha.com/extjs/4.2.1/#!/guide/getting_started-section-1-requirements)
+
+# Sencha ExtJS Theme Build
+## About
+* Can compress (or minify) JavaScript codes internally using YUI Compressor
+
+## Install 
+* Sencha SDK Tools (latest: v2.0.0 beta3)
+ * You may fail to install / execute if you: install on x86_64, virtual machine, using command line
+ * you may see the following errors:
+```sh
+$ sencha
+execvp(): No such file or directory
+```
+ * install 32bit libraries if you encounter errors
+```sh
+# you may see the following errors:
+```
+ * The following environments are automatically added to your user shell environment
+```sh
+export PATH=/opt/SenchaSDKTools-2.0.0-beta3:$PATH
+export SENCHA_SDK_TOOLS_2_0_0_BETA3="/opt/SenchaSDKTools-2.0.0-beta3"
+```
