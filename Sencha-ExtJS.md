@@ -108,17 +108,32 @@ Missing requirement: ClearDataBuilder for Ext JS 1.0.0.201301242238 (com.farata.
 ## Install 
 * Sencha SDK Tools (latest: v2.0.0 beta3)
  * You may fail to install / execute if you: install on x86_64, virtual machine, using command line
- * you may see the following errors:
+ * you may see the following execution errors:
 ```sh
-$ sencha
+# sencha
 execvp(): No such file or directory
+```
+ * or the following errors:
+```sh
+# sencha
+/opt/SenchaSDKTools-2.0.0-beta3/bin/jsdb: error while loading shared libraries: libstdc++.so.6: cannot open shared object file: No such file or directory
 ```
  * install 32bit libraries if you encounter errors
 ```sh
-# you may see the following errors:
+# yum install glibc.i686 libstdc++.i686
 ```
  * The following environments are automatically added to your user shell environment
 ```sh
 export PATH=/opt/SenchaSDKTools-2.0.0-beta3:$PATH
 export SENCHA_SDK_TOOLS_2_0_0_BETA3="/opt/SenchaSDKTools-2.0.0-beta3"
+```
+
+## Build
+```sh
+sencha compile -classpath=ext/src \
+        exclude -namespace Ext.chart and \
+        concat -out ext-all-no-charts-dev.js and \
+        -option debug:false \
+        concat -out ext-all-no-charts-debug.js and \
+        concat -yui -out ext-all-no-charts.js
 ```
