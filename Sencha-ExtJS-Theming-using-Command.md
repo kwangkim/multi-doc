@@ -95,3 +95,50 @@ $panel-header-font-family: Times New Roman !default;
 );
 # 
 ```
+ * using custom component UIs
+```sh
+# cd my-workspace/theme-demo-app/; vi app/view/Viewport.js
+items: [{
+    // default UI
+    region: 'west',
+    xtype: 'panel',
+    title: 'West',
+    split: true,
+    width: 150
+}, {
+    // custom "highlight" UI
+    region: 'center',
+    xtype: 'panel',
+    layout: 'fit',
+    bodyPadding: 20,
+    items: [
+        {
+            xtype: 'panel',
+            ui: 'highlight',    <-- highlight-framed UI
+            frame: true,
+            bodyPadding: 10,
+            title: 'Highlight Panel'
+        }
+    ]
+}, {
+    // neptune "light" UI
+    region: 'east',
+    xtype: 'panel',
+    ui: 'light',
+    title: 'East',
+    split: true,
+    width: 150
+}]
+# cd my-workspace/theme-demo-app/; sencha app build;
+```
+* theme Javascript overrides
+```sh
+# cd my-workspace/packages/my-custom-theme/; vi overrides/panel/Panel.js
+...
+Ext.define('MyCustomTheme.panel.Panel', {
+    override: 'Ext.panel.Panel',
+    titleAlign: 'center'
+});
+# cd my-workspace/packages/my-custom-theme/; sencha package build;
+# cd my-workspace/theme-demo-app/; sencha app refresh; sencha app build;
+```
