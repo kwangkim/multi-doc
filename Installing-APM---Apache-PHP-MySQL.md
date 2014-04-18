@@ -17,6 +17,14 @@ mysql-libs-5.1.69-1.el6_4.x86_64
 # cp /usr/share/mysql/my-medium.cnf /etc/my.cnf 
 cp: overwrite `/etc/my.cnf'? y
 ```
+* new method
+```sh
+# wget http://repo.mysql.com/mysql-community-release-el6-5.noarch.rpm
+# yum install ./mysql-community-release-el6-5.noarch.rpm
+# yum install mysql-server
+# cp /usr/share/mysql/my-medium.cnf /etc/my.cnf 
+cp: overwrite `/etc/my.cnf'? y
+```
 
 ### Basic Installation
 ```sh
