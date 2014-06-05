@@ -6,6 +6,11 @@
  * [download links](http://www.darkartistry.com/?page_id=51)
 * [Google Charts](https://developers.google.com/chart/interactive/docs/gallery/gauge)
  * Visualization - Gauge, other charts
+* [Dojo GFX](http://dojotoolkit.org/features/graphics-and-charting)
+ * a cross-browser 2D vector graphics web application API on desktop and mobile without having to deal with the browser's native graphics technologies
+ * chart, OpenLayers Maps, Geo Charting, gauge, etc.
+ * [Dojo Gauge demo](http://demos.dojotoolkit.org/demos/gauges/demo.html)
+ * License: New BSD (Contributors License Agreement)
 * [jGauge JS](https://code.google.com/p/jgauge/)
  * a free, lightweight JS digital gauge that can be used on web based dashboards like a speedometer / fuel gauge
 * [JustGage](http://justgage.com/)
@@ -32,6 +37,9 @@
  * supports a variety of visual presentations of tiled vector data
  * supports OpenStreetMap, CloudMade, Bing, other image-based web maps
  * License: [link](https://github.com/simplegeo/polymaps/blob/master/LICENSE)
+
+# Web Dashboards
+* Twitter bootstrap dashboards (?)
 
 ## Etc Components
 * [JavaScript CanvasXpress](http://canvasxpress.org/candlestick.html)
