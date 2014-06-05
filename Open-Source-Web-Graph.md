@@ -1,9 +1,11 @@
 # Open Source Web Graphics Library
-## Gauge Controls
+## Gauge Components
 * [Open Flash Gauges](http://www.digitaldarknet.net/flash/index.php?selector=pgauge)
  * Percentage & Dual Gauges, Value Bar, Resource Meter, Meter, Percentage Meter, Status, Temperature
  * I/O Gauges, Digital Readout
  * [download links](http://www.darkartistry.com/?page_id=51)
+* [Google Charts](https://developers.google.com/chart/interactive/docs/gallery/gauge)
+ * Visualization - Gauge, other charts
 * [jGauge JS](https://code.google.com/p/jgauge/)
  * a free, lightweight JS digital gauge that can be used on web based dashboards like a speedometer / fuel gauge
 * [JustGage](http://justgage.com/)
@@ -11,8 +13,17 @@
  * based on Raphaël library for vector drawing
  * completely resolution independent & self-adjusting
  * License: MIT License
+* [Aqua Gauge](http://www.codeproject.com/Articles/20341/Aqua-Gauge)
+ * Windows-dll gauge project
 * [Gauge.js](http://bernii.github.io/gauge.js/)
  * JavaScript/CoffeeScript, animated gauge control
+* [JavaFX]
+ * Steel Series - Best UI representations for Gauges and LCD displays: [example-1](http://www.codetown.us/profiles/blogs/javafx-and-steelseries-gauges-using-fxml)
+ * [memefx](http://code.google.com/p/memefx/) - a set of rich, freely evolving JavaFX components (Gauge + Knob control, etc.)
+* [JFXtras](http://jfxtras.org/)
+ * a set of high quality controls and add-ons for JavaFX
+* [JFreeChart](http://www.jfree.org/)
+ * **Java-based** charting library: [samples](http://www.jfree.org/jfreechart/samples.html)
 
 ## Map Controls
 * [Polymaps](http://polymaps.org/)
