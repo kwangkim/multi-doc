@@ -13,6 +13,7 @@
  * License: New BSD (Contributors License Agreement)
 * [jGauge JS](https://code.google.com/p/jgauge/)
  * a free, lightweight JS digital gauge that can be used on web based dashboards like a speedometer / fuel gauge
+ * License: MIT License
 * [JustGage](http://justgage.com/)
  * a handy JavaScript plugin for generating and animating nice & clean gauges
  * based on Raphaël library for vector drawing
