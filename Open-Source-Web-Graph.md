@@ -40,6 +40,45 @@
  * License: [link](https://github.com/simplegeo/polymaps/blob/master/LICENSE)
 
 # Web Dashboards
+* [Giraffe](https://github.com/kenhub/giraffe)
+ * a graphite, Rickshaw-based (built on d3.js) dashboard
+ * [demo](http://kenhub.github.io/giraffe/#dashboard=Demo&timeFrame=1d)
+ * License: MIT License
+* [Cubism.js](http://square.github.io/cubism/)
+ * Time Series Visualization
+ * dashboard for fitting a large number of metrics on one screen
+ * License: Apache License v2.0
+* [Graphene](https://github.com/jondot/graphene)
+ * a realtime dashboard & graphing toolkit based on D3 and Backbone
+ * License: MIT License
+![Graphene example](http://dashboarddude.com/images/posts/dashboards-for-graphite/graphene.png)
+* [Tasseo]
+ * Rickshaw-based light-weight dashboard for viewing many different metrics
+ * License: 3-clause BSD License (d3.js), MIT License (Rickshaw, underscore.js)
+![Tasseo example](https://raw.githubusercontent.com/obfuscurity/tasseo/master/lib/tasseo/public/i/tasseo.png)
+* [Graph-Explorer](http://vimeo.github.io/graph-explorer/)
+ * a graphite dashboard
+ * License: Apache License v2.0
+* [Vimeo.js](https://github.com/vimeo/vimeo.js/blob/master/LICENSE)
+ * Node.js library for Vimeo API
+ * Video Player
+ * License: Apache License v2.0
+* [DB backend Dashboard - Graphiti](https://github.com/paperlesspost/graphiti)
+ * alternate JavaScript and Ruby front-end, graph storage application for the Graphite real-time graphing engine
+ * License: MIT License
+![Graphiti example](https://camo.githubusercontent.com/e4eb08b0426ae08f2291b490b75eb9ca66e473e5/687474703a2f2f717569726b65792e636f6d2f736b697463682f687474705f5f61712e69726973636f7563682e636f6d5f7377696e6765725f61712d6d64645f6772617068697469312e6a70672d32303131313231312d3133353532382e6a7067)
+* [DB backend Dashboard - Descartes](https://github.com/obfuscurity/descartes)
+ * using Sinatra web framework under Ruby 1.9, PostgreSQL, Redis
+ * License: MIT License
+![Descartes example](https://raw.githubusercontent.com/obfuscurity/descartes/master/lib/descartes/public/img/descartes.png)
+* [GDash](https://github.com/ripienaar/gdash)
+ * a dashboard for graphite
+ * License: Apache License v2.0
+![GDash example](https://raw.githubusercontent.com/ripienaar/gdash/master/sample/email-full-screen.png)
+* [Dashing](http://shopify.github.io/dashing/)
+ * Dashboard framework based on Ruby 1.9+
+ * [Example Dashboard](http://dashingdemo.herokuapp.com/sample)
+ * License: MIT License
 * Twitter bootstrap dashboards (?)
 
 ## Etc Components
