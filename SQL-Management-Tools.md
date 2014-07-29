@@ -5,7 +5,7 @@
  * [site](http://www.squirrelsql.org/)
 * preparations
  * installation of VNC: [here](https://github.com/kimduho/linux/wiki/Linux-VNC-Server-Client-Configurations)
- * installation of java and ant: [here](https://github.com/kimduho/javadev/wiki/Basic-Java-Development-Tools), install IBM's Java SDK 7 instead of Oracle's (needs an IBM ID)
+ * installation of java and ant: [here](https://github.com/kimduho/javadev/wiki/Basic-Java-Development-Tools), install IBM's Java SDK 7 instead of Oracle's (needs an IBM ID, don't needed if you install by binary)
 ```sh
 # export JAVA_HOME=/opt/ibm/java-x86_64-71
 # export CLASSPATH=$JAVA_HOME/lib
