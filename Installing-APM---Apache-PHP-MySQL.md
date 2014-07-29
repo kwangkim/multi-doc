@@ -25,6 +25,18 @@ cp: overwrite `/etc/my.cnf'? y
 # cp /usr/share/mysql/my-medium.cnf /etc/my.cnf 
 cp: overwrite `/etc/my.cnf'? y
 ```
+* binding to specific address
+```sh
+# vi /etc/my.cnf
+[mysqld]
+...
+max_allowed_packet=32M
+bind-address=<external_ip_address_of_mysql_server>
+# service mysqld restart
+# check my ip address at: http://www.whatismyip.com/
+# mysql -u root -p
+mysql> 
+```
 
 ### Basic Installation
 ```sh
