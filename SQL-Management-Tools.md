@@ -38,6 +38,7 @@ Apache Ant version 1.7.1 compiled on August 24 2010
 # wget http://downloads.sourceforge.net/project/squirrel-sql/1-stable/3.5.3/squirrel-sql-3.5.3-standard.jar?r=http%3A%2F%2Fsquirrel-sql.sourceforge.net%2F&ts=1406609125&use_mirror=superb-dca2
 # mkdir -p /usr/squirrel-sql; mv ./squirrel-sql-3.5.3-standard.jar /usr/squirrel-sql; cd /usr/squirrel-sql;
 # java -jar squirrel-sql-3.5.3-standard.jar; # execute with VNC client connection
+```
 * usage
  * [here](http://www.squirrelsql.org/index.php?page=screenshots)
 * detailed installation & usage can be found [here](http://db.apache.org/derby/integrate/SQuirreL_Derby.html).
