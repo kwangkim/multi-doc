@@ -39,6 +39,13 @@ Apache Ant version 1.7.1 compiled on August 24 2010
 # mkdir -p /usr/squirrel-sql; mv ./squirrel-sql-3.5.3-standard.jar /usr/squirrel-sql; cd /usr/squirrel-sql;
 # java -jar squirrel-sql-3.5.3-standard.jar; # execute with VNC client connection
 ```
+* install - mysql driver
+ * download mysql connector-J from [here](http://dev.mysql.com/downloads/connector/j/) (should login to oracle)
+ * unzip & copy jar "mysql-connector-java-5.1.31-bin.jar" to /usr/local/squirrel-sql-3.5.3/lib/;
+ * config drivers --> MySQL Driver --> Extra Class Path: /usr/local/squirrel-sql-3.5.3/lib/mysql-connector-java-5.1.31-bin.jar
+ * Aliases --> MySQL Local --> Driver - MySQL Driver, URL - jdbc:mysql://localhost:3306/<dbname>, user name: <db_user_name>, password: <db_password>, [v] Auto logon, Connection [v] Enable Keep-Alive
+```sh
+```
 * usage
  * [here](http://www.squirrelsql.org/index.php?page=screenshots)
 * detailed installation & usage can be found [here](http://db.apache.org/derby/integrate/SQuirreL_Derby.html).
