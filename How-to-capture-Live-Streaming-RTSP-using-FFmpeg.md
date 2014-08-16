@@ -72,7 +72,7 @@ gpgcheck=1
 * Make Bash Script
 ```sh
 # vi download_rtsp.sh
-ffmpeg -i $4 -t $1 $3/$2.`date "+%Y%m%d.%H%M"`.mp3
+ffmpeg -i $4 -t $1 $3/$2.`date "+%Y%m%d.%H%M" -d "+16 hours"`.mp3
 # 
 ```
 * Create Crontab Job
