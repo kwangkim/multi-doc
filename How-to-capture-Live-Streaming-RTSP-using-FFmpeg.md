@@ -78,9 +78,11 @@ ffmpeg -i $4 -t $1 $3/$2.`date "+%Y%m%d.%H%M"`.mp3
 * Create Crontab Job
 ```sh
 # crontab -e
-59 14 * * 0-5 /home/ebot/english/ebot.sh 1230 lipeng /home/ebot/english rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
-39 14 * * 0-5 /home/ebot/english/ebot.sh 1230 eareng /home/ebot/english rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
-59 17 * * 0-5 /home/ebot/english/ebot.sh 1230 lipeng /home/ebot/english/backup rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
-39 19 * * 0-5 /home/ebot/english/ebot.sh 1230 eareng /home/ebot/english/backup rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
+59 14 * * 0-5 /home/eng/english/download_rtsp.sh 1230 lipeng /home/eng/english rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
+39 14 * * 0-5 /home/eng/english/download_rtsp.sh 1230 eareng /home/eng/english rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
+39 15 * * 0-5 /home/eng/english/download_rtsp.sh 1230 poweng /home/eng/english rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
+59 15 * * 0-5 /home/eng/english/download_rtsp.sh 6630 moreng /home/eng/english rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
+59 17 * * 0-5 /home/eng/english/download_rtsp.sh 1230 lipeng /home/eng/english/backup rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
+39 19 * * 0-5 /home/eng/english/download_rtsp.sh 1230 eareng /home/eng/english/backup rtsp://ebsandroid.ebs.co.kr/fmradiotablet500k/tablet500k
 # service crond restart
 ```
