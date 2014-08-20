@@ -30,3 +30,10 @@
  * $ cd /work/<app_name>; activator run;
  * open service port: $ vi /etc/sysconfig/iptables; add port 9000; service iptables restart;
  * http://localhost:9000  <-- project is compiled in real-time (if 1st time or anything is changed)
+
+## Reference Links
+* [Typesafe.com Platform Getting Started](https://typesafe.com/platform/getstarted)
+* [Play Framework with Java](https://www.playframework.com/documentation/2.0/JavaTodoList)
+* [Understanding Bootstrap Modals](http://www.sitepoint.com/understanding-bootstrap-modals/)
+* [Scala and the Play Framework (Jan 2014)](http://sett.ociweb.com/sett/settJan2014.html)
+* [Creating a Modal window with HTML5 and CSS3](http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/)
