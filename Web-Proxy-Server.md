@@ -21,5 +21,7 @@ listen  MyApp 10.234.5.175:8090
 ```sh
 # service haproxy start
 # service haproxy restart
+# ps -ef | grep haproxy
+haproxy  19745     1  0 04:51 ?        00:00:01 /usr/sbin/haproxy -D -f /etc/haproxy/haproxy.cfg -p /var/run/haproxy.pid
 # service haproxy stop
 ```
