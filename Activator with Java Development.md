@@ -8,7 +8,7 @@
 * Basic Java Development Tools - JDK 1.6+, Ant, Maven: [ref](https://github.com/kimduho/javadev/wiki/Basic-Java-Development-Tools)
 
 ## Installation
-* Download Typesafe Reactive Platform - activator: from [here](http://downloads.typesafe.com/typesafe-activator/1.2.8/typesafe-activator-1.2.8.zip?_ga=1.163601271.953227967.1408496439)
+* Download Typesafe Reactive Platform - activator: from [here](http://downloads.typesafe.com/typesafe-activator/1.2.10/typesafe-activator-1.2.10.zip?_ga=1.71404948.682380747.1414621816)
 * Unzip, add and export PATH
 * Packages: path tree
  * /work/package/activator/  <-- activator binary, environment (you must add to PATH)
@@ -39,6 +39,7 @@
 ```
 
 ## Reference Links
+* [Play Framework Documentation - v2.3.x Java Home](https://www.playframework.com/documentation/2.3.x/JavaHome)
 * [Typesafe.com Platform Getting Started](https://typesafe.com/platform/getstarted)
 * [Play Framework with Java](https://www.playframework.com/documentation/2.0/JavaTodoList)
 * [Understanding Bootstrap Modals](http://www.sitepoint.com/understanding-bootstrap-modals/)
