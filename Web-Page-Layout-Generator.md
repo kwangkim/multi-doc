@@ -3,6 +3,7 @@
 ## LayoutIt!
 * [site link](http://www.layoutit.com/)
 * simple WYSIWYG Bootstrap Layout
+* **free and easy**
 * drag and drop components, preview, download
 
 ## Bootply
