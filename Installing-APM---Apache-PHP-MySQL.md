@@ -6,6 +6,57 @@
 # yum install httpd
 ```
 
+## Install Httpd
+* for CentOS 7.0
+```sh
+# setenforce Permissive
+# yum install httpd
+# rm -rf /etc/httpd/conf.d/welcome.conf
+# vi /etc/httpd/conf/httpd.conf
+...
+ServerAdmin root@myservername.com
+ServerName myservername.com:80
+AllowOverride All
+DirectoryIndex index.html index.cgi index.php
+
+# security reason: server's response header should be simple "Apache", not including version
+ServerSignature Off
+ServerTokens Prod
+
+KeepAlive On
+# systemctl start httpd
+# systemctl enable httpd
+ln -s '/usr/lib/systemd/system/httpd.service' '/etc/systemd/system/multi-user.target.wants/httpd.service'
+# service httpd status
+Redirecting to /bin/systemctl status  httpd.service
+httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled)
+...
+# ps -ef | grep httpd | grep -v grep
+root     21937     1  0 19:51 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache   21938 21937  0 19:51 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache   21939 21937  0 19:51 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache   21940 21937  0 19:51 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache   21941 21937  0 19:51 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+apache   21942 21937  0 19:51 ?        00:00:00 /usr/sbin/httpd -DFOREGROUND
+# yum install iptables-services
+# systemctl enable iptables
+ln -s '/usr/lib/systemd/system/iptables.service' '/etc/systemd/system/basic.target.wants/iptables.service'
+# systemctl start iptables
+# iptables -A INPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT
+# service iptables save
+iptables: Saving firewall rules to /etc/sysconfig/iptables:[  OK  ]
+# vi /etc/sysconfig/iptables
+# systemctl status firewalld
+# systemctl stop firewalld
+# systemctl disable firewalld
+rm '/etc/systemd/system/basic.target.wants/firewalld.service'
+rm '/etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service'
+# service iptables status
+# service iptables restart
+Redirecting to /bin/systemctl restart  iptables.service
+```
+
 ## Install MySQL for Apache / Apache2
 ### Basic Preparation
 ```sh
