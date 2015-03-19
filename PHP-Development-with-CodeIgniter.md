@@ -2,6 +2,38 @@
 ## Prerequisites
 * install [APM first](https://github.com/kimduho/webdev/wiki/Installing-APM---Apache-PHP-MySQL)
 
+## About
+* features
+ * Model-View-Controller Based System
+ * Extremely Light Weight
+ * Full Featured database classes with support for several platforms.
+ * Query Builder Database Support
+ * Form and Data Validation
+ * Security and XSS Filtering
+ * Session Management
+ * Email Sending Class. Supports Attachments, HTML/Text email, multiple protocols (sendmail, SMTP, and Mail) and more.
+ * Image Manipulation Library (cropping, resizing, rotating, etc.). Supports GD, ImageMagick, and NetPBM
+ * File Uploading Class
+ * FTP Class
+ * Localization
+ * Pagination
+ * Data Encryption
+ * Benchmarking
+ * Full Page Caching
+ * Error Logging
+ * Application Profiling
+ * Calendaring Class
+ * User Agent Class
+ * Zip Encoding Class
+ * Template Engine Class
+ * Trackback Class
+ * XML-RPC Library
+ * Unit Testing Class
+ * Search-engine Friendly URLs
+ * Flexible URI Routing
+ * Support for Hooks and Class Extensions
+ * Large library of “helper” functions
+
 ## Install CodeIgniter on CentOS v6.4 Linux
 * [home](http://www.codeigniter.com/)
  * [download](https://github.com/bcit-ci/CodeIgniter/archive/3.0rc3.zip)
