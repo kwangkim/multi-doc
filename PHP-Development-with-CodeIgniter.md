@@ -56,4 +56,4 @@
 # wget http://www.codeigniter.com/data/CodeIgniter3-userguide.zip
 # unzip ./CodeIgniter3-userguide.zip; 
 ```
-* [http://localhost/CodeIgniter3/user_guide/]
+* [local - user guide](http://localhost/CodeIgniter3/user_guide/)
