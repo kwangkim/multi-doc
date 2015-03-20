@@ -57,3 +57,8 @@
 # unzip ./CodeIgniter3-userguide.zip; 
 ```
 * [local - user guide](http://localhost/CodeIgniter3/user_guide/)
+* Useful User Guides
+ * [CodeIgniter Tutorial - Learn CodeIgniter in 40 minutes](http://www.revillweb.com/tutorials/codeigniter-tutorial-learn-codeigniter-in-40-minutes/)
+ * [Beginners Guide to CodeIgniter](https://www.udemy.com/codeigniter-learn-it-correct/)
+ * [CodeIgniter Framework Basic Tutorial](http://www.phpeveryday.com/articles/CodeIgniter-Framework-Basic-Tutorial-P841.html)
+ * [CodeIgniter: Getting Started with a Simple Example](https://www.digitalocean.com/community/tutorials/codeigniter-getting-started-with-a-simple-example)
