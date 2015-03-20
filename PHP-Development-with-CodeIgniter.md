@@ -62,3 +62,11 @@
  * [Beginners Guide to CodeIgniter](https://www.udemy.com/codeigniter-learn-it-correct/)
  * [CodeIgniter Framework Basic Tutorial](http://www.phpeveryday.com/articles/CodeIgniter-Framework-Basic-Tutorial-P841.html)
  * [CodeIgniter: Getting Started with a Simple Example](https://www.digitalocean.com/community/tutorials/codeigniter-getting-started-with-a-simple-example)
+
+## Simple Usage
+* Copy CodeIgniter Template to new name CodeApp
+```sh
+# cd /var/www/html; cp -r ./CodeIgniter-3.0rc3 ./CodeApp
+```
+* Web connect to the CodeApp
+ * [CodeApp-here](http://localhost/CodeApp/)
