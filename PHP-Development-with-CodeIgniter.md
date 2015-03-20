@@ -37,7 +37,7 @@
 ![Application Flow Chart of CodeIgniter](http://www.codeigniter.com/userguide3/_images/appflowchart.gif)
  * ~/index.php: initial router
  * ~system/core/CodeIgniter.php: bootstrapping file --> **shows the overall loading procedure**
- * configuration: ~/application/config/config.php --> stored in $config array
+ * configuration: ~/application/config/config.php --> stored in $config array, 'log_threshold' sets logging condition
  * hook points: prep_system, pre_controller, post_controller_constructor, post_controller, display_override, cache_override, post_system
 
 ## Install CodeIgniter on CentOS v6.4 Linux
@@ -53,6 +53,39 @@
  * If you wish to increase security by hiding the location of your CodeIgniter files you can rename the system and application folders to something more private. If you do rename them, you must open your main index.php file and set the $system_path and $application_folder variables at the top of the file with the new name you’ve chosen.
  * For the best security, both the system and any application folders should be placed above web root so that they are not directly accessible via a browser. By default, .htaccess files are included in each folder to help prevent direct access, but it is best to remove them from public access entirely in case the web server configuration changes or doesn’t abide by the .htaccess.
 
+## Develop Basic Application
+* Creating a Controller: ~application/controllers/
+```sh
+# cp -r /home/workspace/CodeIgniter-3.0rc3 /var/www/html/CodeApp;
+# cd /var/www/html/CodeApp/; cd ~/application/controllers/
+# cp ./Welcome.php ./blog.php; vi ./Blog.php
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+class Blog extends CI_Controller {
+    public function index()
+    {
+        echo "Hello Duho Kim!";
+    }
+}
+# wget http://localhost/CodeApp/index.php/Blog
+```
+* Creating a Model: ~/application/models/
+```sh
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Json extends CI_Model {
+// TODO
+}
+```
+* Creating a View: ~application/views/
+
+## Simple Usage
+* Copy CodeIgniter Template to new name CodeApp
+```sh
+# cd /var/www/html; cp -r ./CodeIgniter-3.0rc3 ./CodeApp
+```
+* Web connect to the CodeApp
+ * [CodeApp-here](http://localhost/CodeApp/)
+
 ## User Guide
 * install user guide
 ```sh
@@ -67,11 +100,3 @@
  * [Beginners Guide to CodeIgniter](https://www.udemy.com/codeigniter-learn-it-correct/)
  * [CodeIgniter Framework Basic Tutorial](http://www.phpeveryday.com/articles/CodeIgniter-Framework-Basic-Tutorial-P841.html)
  * [CodeIgniter: Getting Started with a Simple Example](https://www.digitalocean.com/community/tutorials/codeigniter-getting-started-with-a-simple-example)
-
-## Simple Usage
-* Copy CodeIgniter Template to new name CodeApp
-```sh
-# cd /var/www/html; cp -r ./CodeIgniter-3.0rc3 ./CodeApp
-```
-* Web connect to the CodeApp
- * [CodeApp-here](http://localhost/CodeApp/)
