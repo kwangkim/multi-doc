@@ -36,7 +36,9 @@
 * application flow chart
 ![Application Flow Chart of CodeIgniter](http://www.codeigniter.com/userguide3/_images/appflowchart.gif)
  * ~/index.php: initial router
- * ~system//core/CodeIgniter.php: bootstrapping file --> **shows the overall loading procedure**
+ * ~system/core/CodeIgniter.php: bootstrapping file --> **shows the overall loading procedure**
+ * configuration: ~/application/config/config.php --> stored in $config array
+ * hook points: prep_system, pre_controller, post_controller_constructor, post_controller, display_override, cache_override, post_system
 
 ## Install CodeIgniter on CentOS v6.4 Linux
 * [home](http://www.codeigniter.com/)
