@@ -58,6 +58,7 @@
 ```
 * [local - user guide](http://localhost/CodeIgniter3/user_guide/)
 * Useful User Guides
+ * [Very Simple Basic Guide](http://codesamplez.com/development/codeigniter-basic-tutorial)
  * [CodeIgniter Tutorial - Learn CodeIgniter in 40 minutes](http://www.revillweb.com/tutorials/codeigniter-tutorial-learn-codeigniter-in-40-minutes/)
  * [Beginners Guide to CodeIgniter](https://www.udemy.com/codeigniter-learn-it-correct/)
  * [CodeIgniter Framework Basic Tutorial](http://www.phpeveryday.com/articles/CodeIgniter-Framework-Basic-Tutorial-P841.html)
