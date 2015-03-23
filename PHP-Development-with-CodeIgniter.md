@@ -70,6 +70,31 @@ class Blog extends CI_Controller {
 # wget http://localhost/CodeApp/index.php/Blog
 ```
 * Creating a Model: ~/application/models/
+ * set mysql connection environment first:
+```sh
+# vi ~/application/config/database.php
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+$active_group = 'default';
+$active_record = TRUE;
+
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '<password_value>';
+$db['default']['database'] = 'testdb'; // <database_name>
+$db['default']['dbdriver'] = 'mysql'; // mysql, postgres, odbc, etc.
+$db['default']['dbprefix'] = ''; // optional table prefix for table name when running Active Record queries
+$db['default']['pconnect'] = TRUE; // whether to use a persistent connection
+$db['default']['db_debug'] = TRUE; // whether DB errors should be displayed or not
+$db['default']['cache_on'] = FALSE;
+$db['default']['cachedir'] = ''; // absolute server path to DB query cache directory
+$db['default']['char_set'] = 'utf8';
+$db['default']['dbcollat'] = 'utf8_general_ci'; // character collation used in communicating with the DB
+$db['default']['swap_pre'] = ''; // useful for distributed applications
+$db['default']['autoinit'] = TRUE; // whether or not to automatically connect to the DB when the library loads
+$db['default']['stricton'] = FALSE; // whether to force "Strict Mode" connections (ensuring strict SQL)
+/* End of file database.php */
+```sh
+ * do action
 ```sh
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 class Json extends CI_Model {
