@@ -56,6 +56,39 @@ mysql> grant CREATE,INSERT,DELETE,UPDATE,SELECT on kimduhodb.* to kimduho@localh
 mysql> SELECT 
 ```
 
+# Change password for a user
+* change password for the user 'root'
+```sh
+# mysql -u root -p
+Enter password:
+mysql> show databases;
+mysql> connect mysql;
+mysql> select User from user;
++------+
+| User |
++------+
+| root |
+| root |
++------+
+2 rows in set (0.00 sec)
+
+mysql> update user SET password=PASSWORD('dkagh!@#') WHERE User='root';
+Query OK, 2 rows affected (0.00 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> commit;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> exit
+Bye
+
+# mysql -u root -p
+Enter password:
+```
+
 # Create and Delete a MySQL Database
 ```sh
 # mysql -u root -p
