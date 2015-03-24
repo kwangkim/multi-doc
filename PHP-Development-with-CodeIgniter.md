@@ -70,7 +70,8 @@ class Blog extends CI_Controller {
 # wget http://localhost/CodeApp/index.php/Blog
 ```
 * Creating a Model: ~/application/models/
- * set mysql connection environment first:
+ * change the DB connection password: [for mysql](https://github.com/kimduho/webdev/wiki/MySQL_Basics)
+ * set DB connection environment: e.g. MySQL
 ```sh
 # vi ~/application/config/database.php
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
@@ -93,12 +94,49 @@ $db['default']['swap_pre'] = ''; // useful for distributed applications
 $db['default']['autoinit'] = TRUE; // whether or not to automatically connect to the DB when the library loads
 $db['default']['stricton'] = FALSE; // whether to force "Strict Mode" connections (ensuring strict SQL)
 /* End of file database.php */
+# 
 ```sh
- * do action
+* Use Session info
+```sh
+# vi ~/application/config/config.php
+...
+$config['sess_use_database']    = TRUE;
+$config['sess_table_name']      = 'ci_sessions';
+
+$config['sess_cookie_name']     = 'ci_session';
+$config['sess_expiration']      = 86400; // secs
+$config['sess_expire_on_close'] = FALSE;
+$config['sess_encrypt_cookie']  = FALSE;
+$config['sess_match_ip']        = FALSE;
+$config['sess_match_useragent'] = TRUE;
+$config['sess_time_to_update']  = 300;
+...
+```
+* Create DB schema and insert some data
+```sh
+# mkdir -p ~/sql; cd ~/sql; vi test_database.sql
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+CREATE TABLE IF NOT EXISTS  `ci_sessions` (
+	session_id varchar(40) DEFAULT '0' NOT NULL,
+	ip_address varchar(45) DEFAULT '0' NOT NULL,
+	user_agent varchar(120) NOT NULL,
+	last_activity int(10) unsigned DEFAULT 0 NOT NULL,
+	user_data text NOT NULL,
+	PRIMARY KEY (session_id),
+	KEY `last_activity_idx` (`last_activity`)
+);
+
+```
+ * create some page: ~/application/models/test_model.php
 ```sh
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class Json extends CI_Model {
-// TODO
+class Test_model extends CI_Model {
+  function get()
+  {
+    $query = $this->db->get_where('test', array('classify' => 'general'));
+    return $query->result();
+  }
 }
 ```
 * Creating a View: ~application/views/
