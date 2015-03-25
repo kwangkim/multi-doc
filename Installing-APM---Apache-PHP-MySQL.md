@@ -56,6 +56,39 @@ rm '/etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service'
 # service iptables restart
 Redirecting to /bin/systemctl restart  iptables.service
 ```
+* Virtual Server Hosting by port
+```sh
+# vi /etc/httpd/conf/httpd.conf
+#NameVirtualHost *:80
+NameVirtualHost <myhostname>:80
+NameVirtualHost <myhostname>:8080
+
+<VirtualHost *:80>
+    ServerAdmin root@<myhostname>
+    DocumentRoot /var/www/html
+    ServerName <myhostname>
+</VirtualHost>
+
+<VirtualHost *:8080>
+    ServerAdmin root@<myhostname>
+    DocumentRoot /var/www/html/<2nd_path>
+    ServerName <myhostname>
+</VirtualHost>
+# vi /etc/sysconfig/iptables
+...
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [0:0]
+...
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 80 -j ACCEPT
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT
+COMMIT
+# service iptables restart
+# service httpd restart
+# wget http://<myhostname>:80/
+# wget http://<myhostname>:8080/
+```
 
 ## Install MySQL for Apache / Apache2
 ### Basic Preparation
